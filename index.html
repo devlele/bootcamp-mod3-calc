@@ -12,16 +12,22 @@
             <h1>Calculadora</h1>
             <input id="input1" type="number"/>
             <input id="input2" type="number"/>
+
             <div>
                 <button onclick="calc('+')">+</button>
                 <button onclick="calc('-')">-</button>
                 <button onclick="calc('*')">*</button>
                 <button onclick="calc('/')">/</button>
             </div>
-            <input id="output" type="text" readonly/>
-            <div class="history">
 
+            <input id="output" type="text" readonly/>
+            
+        </div>
+        <div id="history" class="history">
+            <h1>Histórico: </h1>
+            <div id="historyList">
             </div>
+    
         </div>
     </div>
 
