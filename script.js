@@ -24,11 +24,11 @@ function calc(operation){
 
     document.getElementById("output").value = output;
 
-    var newHistory = "<div>" + input1 +" "+ operation +" "+ input2 +" "+ "=" +" "+ output + "</div>";
-    document.getElementById("historyList").innerHTML = newHistory + document.getElementById("historyList").innerHTML; //inner html adiciona elementos html
+    var newHistory = "<p>" + input1 +" "+ operation +" "+ input2 +" "+ "=" +" "+ output + "</p>";
+    document.getElementById("history").innerHTML = newHistory + document.getElementById("history").innerHTML; //inner html adiciona elementos html
 
-    if (document.getElementById("historyList").children.length > 10){
-        document.getElementById("historyList").removeChild(document.getElementById("historyList").childNodes[10]);
+    if (document.getElementById("history").children.length > 10){
+        document.getElementById("history").removeChild(document.getElementById("history").childNodes[10]);
     }
 
 
